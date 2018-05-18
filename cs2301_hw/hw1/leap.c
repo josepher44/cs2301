@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define cutoffYear (1752)
+#define CUTOFF_YEAR (1752)
 /*
  * Program to determine if an input year is a leap year
  * Only works for years which the modern rule applies to, from 1752 on.
@@ -22,11 +22,11 @@ int main (int argc, const char* argv[])
     }
     year = atoi(argv[1]); // Get string from command line; convert to int
 
-    if (year < cutoffYear) // Check if the year is recent enough for checking
+    if (year < CUTOFF_YEAR) // Check if the year is recent enough for checking
     {
         printf("The year entered must be %d or more recent, as the modern "
         "rule for leap years does not apply before this time. You entered "
-        "%d.\n", cutoffYear, year);
+        "%d.\n", CUTOFF_YEAR, year);
         return 2; // Indicate failure -- year out of range
     }
 
