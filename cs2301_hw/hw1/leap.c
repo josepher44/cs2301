@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define CUTOFF_YEAR (1752)
+
 /*
  * Program to determine if an input year is a leap year
  * Only works for years which the modern rule applies to, from 1752 on.
@@ -8,6 +9,7 @@
  * joedgallagher@wpi.edu
  * Last modified: 5/17/2018
  */
+ 
 int main (int argc, const char* argv[])
 {
     //Declare variables

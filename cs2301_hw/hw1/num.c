@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "grades.h"
 #define MAX_GRADES (20)
+
 /*
  * Program to determine if an input year is a leap year
  * Only works for years which the modern rule applies to, from 1752 on.
@@ -37,6 +38,7 @@ int main (int argc, const char* argv[])
         all_grades[i-1] = atoi(argv[i]);
     }
 
+    // Call function to print average, minimum, and maximum values
     grades(all_grades, grade_count);
     return 0; // Indicate success!
 }
