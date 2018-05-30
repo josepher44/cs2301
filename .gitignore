@@ -20,6 +20,21 @@
 *.tar
 *.zip
 
+# images #
+######################
+*.png
+*.jpg
+*.bmp
+*.jpeg
+
+# docs #
+######################
+*.html
+*.tex
+*.sty
+*.js
+*.css
+
 # Logs and databases #
 ######################
 *.log
